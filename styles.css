@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background: #FFF;
+    color: #111;
+}
+
+header.main-header {
+    width: 67.1%;
+    margin: 0 auto 0;
+}
+
+img#logo {
+    float: left;
+    padding-top: 3.3%;
+    padding-right: 8.7%;
+}
+
+div.links {
+    padding-top: 3.4%;
+}
+
+div.links a {
+    text-decoration: none;
+    color: #111;
+    margin-right: 2.1%;
+}
+
+div.presents {
+    width: 67.1%;
+    height: 33.2%;
+    margin: 2.7% auto 4.5%;
+    background: #FBDFDB;
+    overflow:hidden;
+}
+
+div.pres-content {
+    width: 22.6%;
+    margin-top: 10.6%;
+    margin-left: 4.3%;
+    margin-bottom: 10.6%;
+    font-size: 18px;
+    float: left;
+}
+
+img#chef {
+    width: 15.4%;
+    height: 27.2%;
+    margin-top: 6%;
+    margin-right: 7.1%;
+    float: right;
+}
+
+div.presents h1 {
+    font-size: 32px;
+}
+
+div.mais-acess {
+    width: 67.1%;
+    margin: 0 auto 0;
+    clear: both;
+}
+
+div.mais-acess h1 {
+    font-size: 24px;
+    margin-bottom: 1.8%;
+}
+
+img.img-macess {
+    width: 21.4%;
+    height: 12.7%;
+}

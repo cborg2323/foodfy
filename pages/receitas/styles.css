@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background: #FFF;
+    color: #111;
+}
+
+header.main-header {
+    width: 940px;
+    margin: 0 auto 0;
+    overflow:hidden;
+}
+
+img#logo {
+    float: left;
+    width: 90.6px;
+    height: 26.9px;
+    margin-top: 36.1px;
+    margin-right: 122.4px;
+}
+
+div.links {
+    float: left;
+    padding-top: 38px;
+    width: 200px;
+}
+
+div.links a {
+    text-decoration: none;
+    color: #111;
+    margin-right: 30px;
+}
+
+a.atual {
+    font-weight: bold;
+}
+
+div.mais-acess {
+    width: 940px;
+    margin: 50px auto 50px;
+    clear: both;
+    overflow:hidden;
+}
+
+div.mais-acess h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+div.product {
+    float: left;
+    margin-bottom: 30px;
+}
+
+div.nlastonline {
+    margin-right: 20px;
+}
+
+img.img-macess {
+    width: 300px;
+    height: 140px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+div.product h3 {
+    font-size: 18px;
+}
+
+div.product p {
+    font-size: 14px;
+    color: #777;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 660px; /* Could be more or less, depending on screen size */
+    height: 413px;
+    text-align: center;
+}
+
+img.img-modal {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+div.modal-desc {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+div.modal-desc h3 {
+    font-size: 24px;
+}
+
+div.modal-desc p {
+    font-size: 18px;
+    color: #777;
+}
+
+.close {
+    color: #999;
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background: #EEEEEE;
+    height: 62px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999;
+    padding: 23px 0 23px;
+}

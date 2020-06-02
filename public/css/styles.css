@@ -37,26 +37,6 @@ div.links a {
     margin-right: 30px;
 }
 
-a.atual {
-    font-weight: bold;
-}
-
-article {
-    width: 940px;
-    margin: 50px auto 0;
-}
-
-article h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-article p {
-    margin-bottom: 30px;
-    font-size: 18px;
-    color: #444;
-}
-
 footer {
     clear: both;
     text-align: center;

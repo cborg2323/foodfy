@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+    {% block css %}
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/pages/styles.css">
+    {% endblock %}
+
+    {% block content %}
+
+    <div class="presents">
+        <div class="pres-content">
+            <h1>As melhores receitas</h1>
+            <p>
+                Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+            </p>
+        </div>
+
+        <img id="chef" src="assets/chef.png">
+    </div>
+
+    <div class="mais-acess">
+        <h1>Mais acessadas</h1>
+        {% for product in data %}
+            {% if loop.index % 3 == 0 %}
+            <div class="product">
+                <img class="img-macess" src={{product.image}} >
+                <div class="tit-aut">
+                    <h3>{{product.title}}</h3>
+                    <p>por {{product.author}}</p>
+                </div>
+            </div>
+            {% else %}
+            <div class="product nlastonline">
+                <img class="img-macess" src={{product.image}} >
+                <div class="tit-aut">
+                    <h3>{{product.title}}</h3>
+                    <p>por {{product.author}}</p>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        
+    </div>
+
+</body>
+</html>
+
+    {% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+
+    {% block css %}
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/pages/receitas/styles.css">
+    {% endblock %}
+
+    {% block content %}
+
+    <div class="mais-acess">
+
+    {% for product in data %}
+            {% if loop.index % 3 == 0 %}
+            <div class="product">
+                <img class="img-macess" src={{product.image}} >
+                <div class="tit-aut">
+                    <h3>{{product.title}}</h3>
+                    <p>por {{product.author}}</p>
+                </div>
+            </div>
+            {% else %}
+            <div class="product nlastonline">
+                <img class="img-macess" src={{product.image}} >
+                <div class="tit-aut">
+                    <h3>{{product.title}}</h3>
+                    <p>por {{product.author}}</p>
+                </div>
+            </div>
+            {% endif %}
+    {% endfor %}
+    
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img class="img-modal" src="../../assets/asinhas.png" >
+            <div class="modal-desc">
+                <h3>Asinhas de frango ao barbecue</h3>
+                <p>por Vania Steroski</p>
+            </div>
+            <span class="close">Fechar modal</span>
+        </div>
+        
+    </div>
+    
+    
+    <script src="./js/modal.js"></script>
+</body>
+</html>
+
+{% endblock %}

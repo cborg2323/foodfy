@@ -27,6 +27,14 @@ app.get('/receitas', function (req, res) {
     res.render('pages/receitas/index.njk', {data: data});
 });
 
+app.get("/recipes/:index", function (req, res) {
+    const recipeIndex = req.params.index;
+    const recipe = data[recipeIndex];
+  
+    res.render('pages/inforeceitas/index.njk', recipe);
+  })
+  
+
 app.listen(3000, function () {
     console.log('App listening on port 3000!');
   });

@@ -13,7 +13,7 @@ body {
 
 header.main-header {
     width: 940px;
-    margin: 0 auto 0;
+    margin: 0 auto 50px;
     overflow:hidden;
 }
 

@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+    {% block css %}
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/pages/inforeceitas/styles.css">
+    {% endblock %}
+
+    {% block content %}
+
+        <div class="cont-receita">
+
+            <img id="img-receita" src={{image}}>
+
+            <div class="titulo-autor">
+                <h1>{{title}}</h1>
+                <p id="aut-receita">por {{author}}</p>
+            </div>
+
+            <div class="ingredientes rec-content">
+                <h2>Ingredientes</h2>
+                <ul>
+                    {% for ingredient in ingredients %}
+                        <li>{{ingredient}}</li>
+                    {% endfor %}
+                </ul>  
+            </div>
+
+            <div class="modopreparo rec-content">
+                <h2>Modo de preparo</h2>
+                <ul>
+                    {% for instr in preparation %}
+                        <li>{{instr}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="infoadc rec-content">
+                <h2>Modo de preparo</h2>
+                <p>{{information}}</p>
+            </div>
+
+        </div>
+
+    {% endblock %}

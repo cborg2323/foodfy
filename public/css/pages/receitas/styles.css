@@ -31,64 +31,6 @@ img.img-macess {
     color: #777;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 30px;
-    border: 1px solid #888;
-    width: 660px; /* Could be more or less, depending on screen size */
-    height: 413px;
-    text-align: center;
-}
-
-img.img-modal {
-    width: 600px;
-    height: 200px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-div.modal-desc {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-div.modal-desc h3 {
-    font-size: 24px;
-}
-
-div.modal-desc p {
-    font-size: 18px;
-    color: #777;
-}
-
-.close {
-    color: #999;
-    font-size: 16px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 a.link {
     display: block;
     text-decoration: none;

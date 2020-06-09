@@ -17,8 +17,8 @@
             </div>
 
             <div class="ingredientes rec-content">
-                <h2>Ingredientes</h2>
-                <ul>
+                <h2>Ingredientes</h2><span class="shide">ESCONDER</span>
+                <ul id="ul-ing">
                     {% for ingredient in ingredients %}
                         <li>{{ingredient}}</li>
                     {% endfor %}
@@ -26,8 +26,8 @@
             </div>
 
             <div class="modopreparo rec-content">
-                <h2>Modo de preparo</h2>
-                <ul>
+                <h2>Modo de preparo</h2><span class="shide">ESCONDER</span>
+                <ul id="ul-prep">
                     {% for instr in preparation %}
                         <li>{{instr}}</li>
                     {% endfor %}
@@ -35,10 +35,11 @@
             </div>
 
             <div class="infoadc rec-content">
-                <h2>Modo de preparo</h2>
-                <p>{{information}}</p>
+                <h2>Informações adicionais</h2><span class="shide">ESCONDER</span>
+                <p id="p-info">{{information}}</p>
             </div>
 
         </div>
 
+    <script src="/js/shide.js"></script>
     {% endblock %}

@@ -11,23 +11,25 @@
 
     {% for product in data %}
             {% if loop.index % 3 == 0 %} 
-            {# <a href={{"/recipes/" + loop.index0 }} #}
-            <div class="product">
-                <img class="img-macess" src={{product.image}} >
-                <div class="tit-aut">
-                    <h3>{{product.title}}</h3>
-                    <p>por {{product.author}}</p>
+            <a class="link product" href={{"/recipes/" + loop.index0 }} >
+                <div>
+                    <img class="img-macess" src={{product.image}} >
+                    <div class="tit-aut">
+                        <h3>{{product.title}}</h3>
+                        <p>por {{product.author}}</p>
+                    </div>
                 </div>
-            </div>
-            {# </a> #}
+            </a>
             {% else %}
-            <div class="product nlastonline">
-                <img class="img-macess" src={{product.image}} >
-                <div class="tit-aut">
-                    <h3>{{product.title}}</h3>
-                    <p>por {{product.author}}</p>
+            <a class="link product nlastonline" href={{"/recipes/" + loop.index0 }} >
+                <div>
+                    <img class="img-macess" src={{product.image}} >
+                    <div class="tit-aut">
+                        <h3>{{product.title}}</h3>
+                        <p>por {{product.author}}</p>
+                    </div>
                 </div>
-            </div>
+            </a>
             {% endif %}
     {% endfor %}
     
